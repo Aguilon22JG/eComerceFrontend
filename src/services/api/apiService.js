@@ -1,10 +1,10 @@
 // Servicio base para las llamadas a la API
-import { API_CONFIG } from '../constants/apiRoutes';
+import { API_CONFIG } from '../../constants/apiRoutes';
 
 class ApiService {
   constructor() {
-    this.baseURL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001/api';
-    this.timeout = API_CONFIG.TIMEOUT;
+    this.baseURL = process.env.REACT_APP_API_BASE_URL;
+    this.timeout = API_CONFIG?.TIMEOUT || 10000;
   }
 
   // Método para obtener el token de autenticación
@@ -30,7 +30,6 @@ class ApiService {
   async makeRequest(url, options = {}) {
     try {
       const config = {
-        headers: this.getDefaultHeaders(),
         ...options,
         headers: {
           ...this.getDefaultHeaders(),

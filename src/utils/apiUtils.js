@@ -71,7 +71,7 @@ export const isValidEmail = (email) => {
 
 // Función para validar teléfono
 export const isValidPhone = (phone) => {
-  const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+  const phoneRegex = /^[+]?[1-9][\d]{0,15}$/;
   return phoneRegex.test(phone);
 };
 

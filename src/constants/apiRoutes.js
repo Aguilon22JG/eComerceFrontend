@@ -1,16 +1,16 @@
 // Constantes para las rutas de la API del ecommerce
 
 // Base URL de la API
-export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001/api';
+export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 // Endpoints de autenticación
 export const AUTH_ENDPOINTS = {
-  LOGIN: `${API_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}/login`,
-  REGISTER: `${API_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}/register`,
-  LOGOUT: `${API_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}/logout`,
-  REFRESH_TOKEN: `${API_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}/refresh`,
-  FORGOT_PASSWORD: `${API_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}/forgot-password`,
-  RESET_PASSWORD: `${API_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}/reset-password`,
+  LOGIN: `${API_BASE_URL}/auth/login`,
+  REGISTER: `${API_BASE_URL}/auth/register`,
+  LOGOUT: `${API_BASE_URL}/auth/logout`,
+  REFRESH_TOKEN: `${API_BASE_URL}/auth/refresh`,
+  FORGOT_PASSWORD: `${API_BASE_URL}/auth/forgot-password`,
+  RESET_PASSWORD: `${API_BASE_URL}/auth/reset-password`,
 };
 
 // Endpoints de productos
