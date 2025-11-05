@@ -1,5 +1,5 @@
 # 🛒 Ecommerce Frontend
-
+# Proyecto
 Este es el frontend de una aplicación de ecommerce desarrollada con React.js. El proyecto está configurado para trabajar de manera local con una API backend.
 
 ## 📁 Estructura del Proyecto
